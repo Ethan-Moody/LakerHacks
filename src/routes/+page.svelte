@@ -76,7 +76,7 @@
 		isMenuOpen = !isMenuOpen;
 	}
 
-	const registrationURL = 'https://forms.gle/uqoj1GAksMGaDaoNA';
+	const registrationURL = 'https://forms.gle/i5QVqMY2qdeSHVB36';
 	const discordURL = 'https://discord.gg/GJrP3cQt2x';
 	const scheduleURL = base + '/schedule';
 
