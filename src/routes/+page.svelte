@@ -1,9 +1,7 @@
 <script lang="ts">
-	import Navbar from '$lib/Components/Navbar.svelte';
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
 	import { slide } from 'svelte/transition';
-	import Captions from '$lib/assets/lakerhacks-promo-captions.vtt';
 	import TeamItem from '$lib/Components/TeamItem.svelte';
 	import CSALogo from '$lib/assets/CSA_logo.png';
 	import HCIOLogo from '$lib/assets/HCIO_logo.png';
@@ -28,7 +26,7 @@
 	let countdownInterval: ReturnType<typeof setInterval>;
 
 	function updateCountdown() {
-		const targetDate = new Date('2026-04-11T10:00:00-04:00'); // 10:00 AM EDT (updated from April 18)
+		const targetDate = new Date('2026-04-18T10:00:00-04:00'); // 10:00 AM EDT (updated from April 18)
 		const now = new Date();
 		const difference = targetDate.getTime() - now.getTime();
 
@@ -167,7 +165,7 @@
 					</div>
 				</div>
 				<h1><span class="text-[#FFE34F]">Laker</span><span class="text-[#9CC747]">Hacks</span></h1>
-				<p class="text-white/80">April 19th-20th, 2025</p>
+				<p class="text-white/80">April 18th-19th, 2025</p>
 
 				<div class="mx-auto mt-4 flex max-w-[400px] flex-col justify-center gap-[10px]">
 					<a
@@ -381,12 +379,6 @@
 				name="Shrishtika Bajracharya"
 				role="Co-director/MLH head of contact"
 				linkedinUrl=""
-				/>
-				<TeamItem
-					name="Hamadi Belghachi"
-					role="Content Creator"
-					linkedinUrl="https://www.linkedin.com/in/hamadidesign/"
-					image={HamadiImage}
 				/>
 			<TeamItem 
 				name="Aditya Raj Singh" 
