@@ -164,7 +164,7 @@
 					</div>
 				</div>
 				<h1><span class="text-[#FFE34F]">Laker</span><span class="text-[#9CC747]">Hacks</span></h1>
-				<p class="text-white/80">April 18th-19th, 2025</p>
+				<p class="text-white/80">April 18th-19th, 2026</p>
 
 				<div class="mx-auto mt-4 flex max-w-[400px] flex-col justify-center gap-[10px]">
 					<a
