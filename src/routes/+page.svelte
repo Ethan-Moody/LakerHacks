@@ -371,12 +371,12 @@
 				<TeamItem
 				name="Shrishtika Bajracharya"
 				role="Co-director/MLH head of contact"
-				linkedinUrl=""
+				linkedinUrl="https://www.linkedin.com/in/shrishtika/"
 				/>
 			<TeamItem 
 				name="Aditya Raj Singh" 
 				role="Devpost & Registration Manager" 
-				linkedinUrl="" 
+				linkedinUrl="https://www.linkedin.com/in/aditya-raj-singh-14689a351/" 
 				image="">
 			</TeamItem>
 			<TeamItem 
@@ -388,7 +388,7 @@
 			<TeamItem 
 				name="Bivushi Basnet" 
 				role="Logistics Director" 
-				linkedinUrl="" 
+				linkedinUrl="https://www.linkedin.com/in/bivushi-basnet777/" 
 				image="">
 			</TeamItem>
 			<TeamItem 
@@ -424,7 +424,7 @@
 			<TeamItem 
 				name="Praneeta Pradhan" 
 				role="Budget Manager" 
-				linkedinUrl="" 
+				linkedinUrl="https://www.linkedin.com/in/praneeta-pradhan/" 
 				image="">
 			</TeamItem>
 			<TeamItem 
@@ -433,6 +433,11 @@
 				linkedinUrl="" 
 				image={RileyImage}>
 			</TeamItem>
+			<TeamItem
+				name="Yashaswi Shrestha"
+				role="Sponsorship Coordinator"
+				linkedinUrl="https://www.linkedin.com/in/yshresth/"
+				image=""/>
 			<TeamItem
 				name="Ziaul Haque"
 				role=""
