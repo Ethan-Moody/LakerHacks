@@ -4,9 +4,9 @@
 	import '../app.css';
 	let { children } = $props();
 
-	const registrationURL = 'https://forms.gle/uqoj1GAksMGaDaoNA';
-	const discordURL = 'https://discord.gg/GJrP3cQt2x';
-	const scheduleURL = base + '/schedule';
+	const registrationURL: string = 'https://forms.gle/q8KpPixbczVfDdMs9';
+	const discordURL: string = 'https://discord.gg/GJrP3cQt2x';
+	const scheduleURL: string = base + '/schedule';
 
 	const navItems: NavItem[] = [
 		{ id: 'about', label: 'About', href: base + '/#about' },
