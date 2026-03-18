@@ -73,7 +73,7 @@
 		isMenuOpen = !isMenuOpen;
 	}
 
-	const registrationURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfIdLT-Kc9pzl3C-qcE0t6-q6ST6AFJSqD6uEGIa1dTBuPZzQ/viewform';
+	const registrationURL = 'https://forms.gle/q8KpPixbczVfDdMs9';
 	const discordURL = 'https://discord.gg/GJrP3cQt2x';
 	const scheduleURL = base + '/schedule';
 
