@@ -73,7 +73,7 @@
 		isMenuOpen = !isMenuOpen;
 	}
 
-	const registrationURL = 'https://forms.gle/i5QVqMY2qdeSHVB36';
+	const registrationURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfIdLT-Kc9pzl3C-qcE0t6-q6ST6AFJSqD6uEGIa1dTBuPZzQ/viewform';
 	const discordURL = 'https://discord.gg/GJrP3cQt2x';
 	const scheduleURL = base + '/schedule';
 
@@ -410,7 +410,7 @@
 				image="{ethanMoody}">
 			</TeamItem>
 			<TeamItem 
-				name="Jack" 
+				name="Jack Gallagher" 
 				role="Sponsorship Coordinator" 
 				linkedinUrl="" 
 				image="">
