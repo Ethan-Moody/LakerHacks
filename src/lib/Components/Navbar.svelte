@@ -40,7 +40,7 @@
 		};
 	});
 </script>
-
+<!-- TODO: This likely needs an aria-label, or better semantics. -->
 <div class="sticky top-0 bg-[#0b111f] z-50 {!isMenuOpen ? 'border-b border-gray-800' : ''}">
 	<!-- Mobile header with logo and menu button -->
 	<div

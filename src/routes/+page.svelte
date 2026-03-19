@@ -73,8 +73,8 @@
 	function toggleMenu(): void {
 		isMenuOpen = !isMenuOpen;
 	}
-
-	const registrationURL = 'https://forms.gle/i5QVqMY2qdeSHVB36';
+	// FIXME: Change the registrationURL and the discordURL to be consistent across all components.
+	const registrationURL = 'https://forms.gle/q8KpPixbczVfDdMs9';
 	const discordURL = 'https://discord.gg/GJrP3cQt2x';
 	const scheduleURL = base + '/schedule';
 
@@ -463,6 +463,7 @@
 			</div>
 		</div>
 	</section>
+	<!-- MLH logo section -->
 </div>
 
 <!-- Footer Section -->
@@ -486,8 +487,10 @@
 					<li><a href="#faq" class="text-white/80 transition-colors hover:text-white">FAQ</a></li>
 					<li><a href="#team" class="text-white/80 transition-colors hover:text-white">Team</a></li>
 					<li>
-						<a href="#sponsors" class="text-white/80 transition-colors hover:text-white">Sponsors</a
-						>
+						<a href="#sponsors" class="text-white/80 transition-colors hover:text-white">Sponsors</a>
+					</li>
+					<li>
+						<a href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md" class="text-white/80 transition-colors hover:text-white">MLH Code of Conduct</a>
 					</li>
 				</ul>
 			</div>
@@ -498,7 +501,7 @@
 						<a
 							href="mailto:lakerhacks@oswego.edu"
 							class="text-white/80 transition-colors hover:text-[#D4563F]"
-						>
+							>
 							lakerhacks@oswego.edu
 						</a>
 					</li>

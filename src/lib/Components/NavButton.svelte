@@ -4,7 +4,7 @@
 		toggleMenu: () => void;
 	}>();
 </script>
-
+<!-- TODO: Make this code accessible, particularly this SVG. -->
 <button onclick={toggleMenu} class="text-white focus:outline-none" aria-label="Toggle menu">
 	<svg class="pointer-events-none h-[40px] w-[40px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 		{#if isMenuOpen}
