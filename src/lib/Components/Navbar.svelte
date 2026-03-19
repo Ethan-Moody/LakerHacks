@@ -20,6 +20,7 @@
 	onMount(() => {
 		if (!browser) return;
 
+		// TODO: Add a style to make the pointer turn into a interactive pointer.
 		const handleClickOutside = (event: MouseEvent): void => {
 			const target = event.target as HTMLElement;
 			// Only close if clicking outside both the nav and the toggle button

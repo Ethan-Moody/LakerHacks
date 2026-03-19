@@ -14,7 +14,7 @@
 	{href} 
 	class={`block w-auto ${customClass}`}
 	{...isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {}}
-	on:click={onClick}
+	onclick={onClick}
 >
 	{@html label}
 </a>
