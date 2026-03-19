@@ -1,3 +1,4 @@
+<!-- FIXME: Define a tab-index, so disabled people can use our site. -->
 <script lang="ts">
 	import { base } from '$app/paths';
 	import Navbar from '$lib/Components/Navbar.svelte';

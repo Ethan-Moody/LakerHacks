@@ -12,21 +12,3 @@
 		<img src={scheduleImg} alt="schedule" class="w-full" />
 	</div>
 </main>
-
-<style>
-	.aspect-w-16 {
-		position: relative;
-		width: 43.5%;
-	}
-	.aspect-h-9 {
-		padding-top: 102.5%;
-	}
-
-	@media (max-width: 640px) {
-		.aspect-w-16.aspect-h-9 {
-			padding-top: 230%;
-			width: 100%;
-			max-width: 100%;
-		}
-	}
-</style>
