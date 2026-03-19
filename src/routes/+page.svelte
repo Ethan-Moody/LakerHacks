@@ -3,16 +3,21 @@
 	import { base } from '$app/paths';
 	import { slide } from 'svelte/transition';
 	import TeamItem from '$lib/Components/TeamItem.svelte';
+	// Sponsors for LakerHacks
 	import CSALogo from '$lib/assets/CSA_logo.png';
 	import HCIOLogo from '$lib/assets/HCIO_logo.png';
 	import StudentAssociationLogo from '$lib/assets/studentassociationlogo.png';
 	import AuxServicesLogo from '$lib/assets/auxserviceslogo.png';
-	import Image1 from '$lib/assets/image1.png';
-	import Image2 from '$lib/assets/image2.png';
-	import HamadiImage from '$lib/assets/hamadibelghachi.png';
+	import Image1 from '$lib/assets/workingImage1.png';
+	import Image2 from '$lib/assets/workingImage2.png';
+
+	// Images of directors, etc.
 	import JosephImage from '$lib/assets/josephvega.png';
 	import RileyImage from '$lib/assets/rileynixon.png';
 	import LandonImage from '$lib/assets/landonrusco.png';
+	import ethanImage from '$lib/assets/ethanMoody.png';
+	import bavushiImage from '$lib/assets/bivushiBasnet.png';
+
 	import { browser } from '$app/environment';
 
 	// For responsive navigation
@@ -41,7 +46,9 @@
 		minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
 		seconds = Math.floor((difference % (1000 * 60)) / 1000);
 	}
-
+	function toggleMenu(): void {
+		isMenuOpen = !isMenuOpen;
+	}
 	onMount(() => {
 		if (!browser) return;
 
@@ -56,25 +63,21 @@
 				!target.closest('nav') &&
 				!target.closest('button[aria-label="Toggle menu"]')
 			) {
-				isMenuOpen = false;
+				toggleMenu;
 			}
 		};
 
 		document.addEventListener('click', handleClickOutside);
 
 		return () => {
-			if (browser) {
-				document.removeEventListener('click', handleClickOutside);
-				clearInterval(countdownInterval);
-			}
+			document.removeEventListener('click', handleClickOutside);
+			clearInterval(countdownInterval);
 		};
 	});
 
-	function toggleMenu(): void {
-		isMenuOpen = !isMenuOpen;
-	}
+
 	// FIXME: Change the registrationURL and the discordURL to be consistent across all components.
-	const registrationURL = 'https://forms.gle/q8KpPixbczVfDdMs9';
+	const registrationURL: string = 'https://forms.gle/q8KpPixbczVfDdMs9';
 	const discordURL = 'https://discord.gg/GJrP3cQt2x';
 	const scheduleURL = base + '/schedule';
 
@@ -325,6 +328,7 @@
 								: ''} {index === faqItems.length - 1 ? 'rounded-b-xl' : ''}"
 							on:click={() => handleFAQClick(index)}
 						>
+						<!-- TODO: Make SVG accessible -->
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
@@ -378,25 +382,25 @@
 				<TeamItem
 				name="Shrishtika Bajracharya"
 				role="Co-director/MLH head of contact"
-				linkedinUrl=""
+				linkedinUrl="https://www.linkedin.com/in/shrishtika/"
 				/>
 			<TeamItem 
 				name="Aditya Raj Singh" 
 				role="Devpost & Registration Manager" 
-				linkedinUrl="" 
+				linkedinUrl="https://www.linkedin.com/in/aditya-raj-singh-14689a351/" 
 				image="">
 			</TeamItem>
 			<TeamItem 
 				name="Ananta Bhowmick Antik" 
 				role="Marketing Coordinator" 
-				linkedinUrl="" 
+				linkedinUrl="https://www.linkedin.com/in/ananta-bhowmick/" 
 				image="">
 			</TeamItem>
 			<TeamItem 
 				name="Bivushi Basnet" 
 				role="Logistics Director" 
-				linkedinUrl="" 
-				image="">
+				linkedinUrl="https://www.linkedin.com/in/bivushi-basnet777/" 
+				image="{bavushiImage}">
 			</TeamItem>
 			<TeamItem 
 				name="Ethan" 
@@ -407,13 +411,13 @@
 			<TeamItem 
 				name="Ethanael Moody (thats me!)" 
 				role="Web Developer" 
-				linkedinUrl="" 
-				image="">
-			</TeamItem>
+				linkedinUrl="https://www.linkedin.com/in/ethanael-m-6581b4186/"
+				image="{ethanImage}">
+				</TeamItem>
 			<TeamItem 
 				name="Jack" 
 				role="Sponsorship Coordinator" 
-				linkedinUrl="" 
+				linkedinUrl="https://www.linkedin.com/in/jack-gallagher-/" 
 				image="">
 			</TeamItem>
 			<TeamItem 
@@ -425,7 +429,7 @@
 			<TeamItem 
 				name="Praneeta Pradhan" 
 				role="Budget Manager" 
-				linkedinUrl="" 
+				linkedinUrl="https://www.linkedin.com/in/praneeta-pradhan/" 
 				image="">
 			</TeamItem>
 			<TeamItem 

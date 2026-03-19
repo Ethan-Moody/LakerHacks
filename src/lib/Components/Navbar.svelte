@@ -1,3 +1,4 @@
+<!-- FIXME: Define a tab-index, so disabled people can use our site. -->
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { slide } from 'svelte/transition';
@@ -36,7 +37,7 @@
 		document.addEventListener('click', handleClickOutside);
 
 		return () => {
-			if (browser) document.removeEventListener('click', handleClickOutside);
+			document.removeEventListener('click', handleClickOutside);
 		};
 	});
 </script>
@@ -48,6 +49,7 @@
 	>
 		<div class="flex items-center">
 			<a href={base + "/"} aria-label="Go to Home" class="flex items-center gap-2">
+			<!-- TODO: Create more descriptive alt-text -->
 				<img src={Logo} alt="LakerHacks Logo" class="h-[40px] w-auto" />
 				<span class="text-2xl font-bold"><span class="text-[#FFE34F]">Laker</span><span class="text-[#9CC747]">Hacks</span></span>
 			</a>
@@ -61,13 +63,7 @@
 			transition:slide={{ duration: 300 }}
 			class="fixed inset-0 top-[68px] bg-[#0b111f] border-b border-gray-800 px-[20px] py-[14px] xl:static xl:block"
 		>
-			<div class="flex h-full items-center justify-between">
-				<div class="hidden xl:flex xl:items-center">
-					<a href={base + "/#home"} aria-label="Go to Home" class="flex items-center gap-2">
-						<img src={Logo} alt="LakerHacks Logo" class="h-[40px] w-auto" />
-						<span class="text-2xl font-bold"><span class="text-[#FFE34F]">Laker</span><span class="text-[#9CC747]">Hacks</span></span>
-					</a>
-				</div>
+			<div class="flex h-full items-center justify-center">
 				<div
 					class="flex w-full flex-col items-center justify-center gap-[20px] xl:w-auto xl:flex-row"
 				>
@@ -87,21 +83,23 @@
 							onClick={() => isMenuOpen = false}
 						/>
 					{/each}
+					<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;width:10%;z-index:10000" href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=gray" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-gray.svg" alt="Major League Hacking 2026 Hackathon Season" style="width:100%"></a>
 				</div>
 			</div>
 		</nav>
 	{:else}
 		<nav class="hidden xl:block border-b border-gray-800 px-[20px] py-[14px]">
-			<div class="flex h-full items-center justify-between">
+			<div class="flex h-full items-center justify-center">
+
+				<div
+					class="flex w-full flex-col items-center justify-center gap-[20px] xl:w-auto xl:flex-row"
+				>
 				<div class="hidden xl:flex xl:items-center">
 					<a href={base + "/#home"} aria-label="Go to Home" class="flex items-center gap-2">
 						<img src={Logo} alt="LakerHacks Logo" class="h-[40px] w-auto" />
 						<span class="text-2xl font-bold"><span class="text-[#FFE34F]">Laker</span><span class="text-[#9CC747]">Hacks</span></span>
 					</a>
 				</div>
-				<div
-					class="flex w-full flex-col items-center justify-center gap-[20px] xl:w-auto xl:flex-row"
-				>
 					{#each navItems as item}
 						<NavItem
 							href={item.href}
@@ -119,6 +117,7 @@
 						/>
 					{/each}
 				</div>
+				<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=black" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-black.svg" alt="Major League Hacking 2026 Hackathon Season" style="width:100%"></a>
 			</div>
 		</nav>
 	{/if}
