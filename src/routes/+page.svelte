@@ -17,7 +17,7 @@
 	import LandonImage from '$lib/assets/landonrusco.png';
 	import ethanImage from '$lib/assets/ethanMoody.png';
 	import bavushiImage from '$lib/assets/bivushiBasnet.png';
-
+	import theOneTheOnlyTheGallagher from '$lib/assets/jackGallagher.png';
 	import { browser } from '$app/environment';
 
 	// For responsive navigation
@@ -415,10 +415,10 @@
 				image="{ethanImage}">
 				</TeamItem>
 			<TeamItem 
-				name="Jack" 
+				name="Jack Gallagher" 
 				role="Sponsorship Coordinator" 
 				linkedinUrl="https://www.linkedin.com/in/jack-gallagher-/" 
-				image="">
+				image="{theOneTheOnlyTheGallagher}">
 			</TeamItem>
 			<TeamItem 
 				name="Neh Patel" 
