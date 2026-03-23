@@ -8,10 +8,15 @@
 	import HCIOLogo from '$lib/assets/HCIO_logo.png';
 	import StudentAssociationLogo from '$lib/assets/studentassociationlogo.png';
 	import AuxServicesLogo from '$lib/assets/auxserviceslogo.png';
+<<<<<<< HEAD
 	import Image1 from '$lib/assets/workingImage1.png';
 	import Image2 from '$lib/assets/workingImage2.png';
 
 	// Images of directors, etc.
+=======
+	import Image1 from '$lib/assets/image1.png';
+	import Image2 from '$lib/assets/image2.png';
+>>>>>>> main
 	import JosephImage from '$lib/assets/josephvega.png';
 	import RileyImage from '$lib/assets/rileynixon.png';
 	import LandonImage from '$lib/assets/landonrusco.png';
@@ -19,7 +24,7 @@
 	import bavushiImage from '$lib/assets/bivushiBasnet.png';
 	import theOneTheOnlyTheGallagher from '$lib/assets/jackGallagher.png';
 	import { browser } from '$app/environment';
-
+	import ethanMoody from '$lib/assets/ethanMoody.png';
 	// For responsive navigation
 	let isMenuOpen: boolean = false;
 
@@ -76,8 +81,12 @@
 	});
 
 
+<<<<<<< HEAD
 	// FIXME: Change the registrationURL and the discordURL to be consistent across all components.
 	const registrationURL: string = 'https://forms.gle/q8KpPixbczVfDdMs9';
+=======
+	const registrationURL = 'https://forms.gle/q8KpPixbczVfDdMs9';
+>>>>>>> main
 	const discordURL = 'https://discord.gg/GJrP3cQt2x';
 	const scheduleURL = base + '/schedule';
 
@@ -168,7 +177,7 @@
 					</div>
 				</div>
 				<h1><span class="text-[#FFE34F]">Laker</span><span class="text-[#9CC747]">Hacks</span></h1>
-				<p class="text-white/80">April 18th-19th, 2025</p>
+				<p class="text-white/80">April 18th-19th, 2026</p>
 
 				<div class="mx-auto mt-4 flex max-w-[400px] flex-col justify-center gap-[10px]">
 					<a
@@ -374,15 +383,18 @@
 					image={JosephImage}
 				/>
 				<TeamItem
-					name="Landon Rusco"
-					role="Co-director/MLH head of contact"
-					linkedinUrl="https://www.linkedin.com/in/landon-rusco-3004a4358/"
-					image={LandonImage}
-				/>
-				<TeamItem
 				name="Shrishtika Bajracharya"
 				role="Co-director/MLH head of contact"
 				linkedinUrl="https://www.linkedin.com/in/shrishtika/"
+<<<<<<< HEAD
+=======
+				/>
+				<TeamItem
+					name="Landon Rusco"
+					role="Organizer/MLH head of contact"
+					linkedinUrl="https://www.linkedin.com/in/landon-rusco-3004a4358/"
+					image={LandonImage}
+>>>>>>> main
 				/>
 			<TeamItem 
 				name="Aditya Raj Singh" 
@@ -400,7 +412,11 @@
 				name="Bivushi Basnet" 
 				role="Logistics Director" 
 				linkedinUrl="https://www.linkedin.com/in/bivushi-basnet777/" 
+<<<<<<< HEAD
 				image="{bavushiImage}">
+=======
+				image="">
+>>>>>>> main
 			</TeamItem>
 			<TeamItem 
 				name="Ethan" 
@@ -411,9 +427,15 @@
 			<TeamItem 
 				name="Ethanael Moody (thats me!)" 
 				role="Web Developer" 
+<<<<<<< HEAD
 				linkedinUrl="https://www.linkedin.com/in/ethanael-m-6581b4186/"
 				image="{ethanImage}">
 				</TeamItem>
+=======
+				linkedinUrl="https://www.linkedin.com/in/ethanael-m-6581b4186/" 
+				image="{ethanMoody}">
+			</TeamItem>
+>>>>>>> main
 			<TeamItem 
 				name="Jack Gallagher" 
 				role="Sponsorship Coordinator" 
@@ -438,6 +460,11 @@
 				linkedinUrl="" 
 				image={RileyImage}>
 			</TeamItem>
+			<TeamItem
+				name="Yashaswi Shrestha"
+				role="Sponsorship Coordinator"
+				linkedinUrl="https://www.linkedin.com/in/yshresth/"
+				image=""/>
 			<TeamItem
 				name="Ziaul Haque"
 				role=""
